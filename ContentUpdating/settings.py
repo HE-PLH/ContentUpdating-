@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'ckeditor',
     'rest_framework_simplejwt',
     'authentication.apps.AuthenticationConfig',
     'courses.apps.CoursesConfig',

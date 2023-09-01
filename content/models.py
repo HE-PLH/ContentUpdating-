@@ -1,4 +1,5 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 import sys
 sys.path.append("..")
@@ -24,6 +25,7 @@ class Topic(models.Model):
 class Content(models.Model):
     # unit
     name = models.CharField(max_length=255, null=False)
+    description = RichTextField()
     period = models.CharField(max_length=255, null=False)
     topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
     # image = ImageF

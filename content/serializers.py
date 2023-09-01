@@ -31,9 +31,9 @@ class TopicSerializer(serializers.ModelSerializer):
 class ContentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Content
-        # fields = "__all__"
+        fields = "__all__"
         topic = TopicSerializer()
-        fields = ["id", "name", "topic"]
+        # fields = ["id", "name", "topic", "description"]
 
     # def update(self, instance, validated_data):
     #     instance.topic_code = validated_data.get("topic_code", instance.topic_code)
